@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Financiamento</h1>
+
+        <div class="content" id="form">
+
+            <form action="#">
+
+                <label for="financiamento">Valor Financiado:</label>
+                <input type="number" name="financiamento" id="financiamento" required>
+
+                <label for="juros">Taxa de Juros Mensal (%):</label>
+                <input type="number" name="juros" id="juros" required step="0.01">
+
+                <!-- Botão de tipo "button" para não submeter o formulário -->
+                <button type="button" onclick="calcular(event)">Calcular</button>
+
+            </form>
+
+        </div>
+
+        <div class="content-resultado" id="resul">
+
+            <h2>Resultado</h2>
+            
+            <!-- Nova div para os resultados -->
+            <div id="resultados"></div>
+
+            <button onclick="voltar()">Fazer outro</button>
+        </div>
+
+    </div>
+
+    <script src="../static/js/script.js"></script>
+
+</body>
+
+</html>

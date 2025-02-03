@@ -1,0 +1,11 @@
+ # Diretórios de ambiente virtual
+venv/
+
+# Arquivos de cache Python
+__pycache__/
+*.pyc
+
+# Arquivos temporários de edição
+*.swp
+*.swo
+*~
